@@ -1,0 +1,175 @@
+* {
+    font-family: 'Oldenburg', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: url('static/bg.jpeg'); /* Path to your JPEG */
+    background-size: cover; /* Ensures the image covers the container without distortion */
+    background-position: center; /* Center the image */
+    background-repeat: repeat-y; /* Prevent the image from repeating */
+}
+
+nav {
+    position: absolute;
+    margin: 10px 0 0 15px;
+}
+
+p {
+    text-align: center;
+    margin: 0 20px;
+    background-color: white;
+}
+
+table {
+    max-width: 85%;
+    margin-bottom: 40px;
+}
+
+.note-1,
+.note-2,
+.note-3 {
+    font-size: min(3.8vw, 16pt);
+}
+
+.note-top p,
+.main-note p {
+    text-align: justify;
+}
+
+.note-top p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.note-bottom {
+    padding-bottom: 30px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.note-title {
+    font-size: min(8vw, 24pt);
+    font-weight: bolder;
+}
+
+.note-date,
+.note-author {
+    font-size: min(3vw, 12pt);
+    font-style: italic;
+}
+
+.note-top {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+button {
+    width: 250px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+}
+
+.top,
+.middle,
+.bottom,
+.buttons {
+    background-color: white;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-note {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.main-schedule {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.coupons.schedule {
+    margin-top: 50px;
+}
+
+.welcome {
+    font-size: min(4vw, 18pt);
+    font-weight: lighter;
+    margin-top: 20px;
+    padding: 10px 30px;
+    padding-bottom: 0px;
+}
+
+.name,
+.coupons {
+    font-size: min(8vw, 24pt);
+    font-weight: bolder;
+}
+
+.text {
+    font-size: min(4vw, 18pt);
+    margin: 0;
+}
+
+.coupons {
+    margin: 0;
+    margin-top: 20px;
+}
+
+.coupon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.celebration {
+    font-size: min(8vw, 32pt);
+    font-weight: bolder;
+    color: #F67070;
+    padding: 0px 10px;
+}
+
+.msg {
+    margin-bottom: 50px;
+    font-size: min(4vw, 18pt);
+}
+
+.from {
+    font-size: min(4vw, 18pt);
+    margin-bottom: 20px;
+    padding: 0px 30px;
+}
+
+.red {
+    color: #BD5A5A;
+}
+
+.blue {
+    color: #99BCC3;
+}
+
+@supports (height: 100dvh) {
+    body {
+      height: 100dvh;
+    }
+  }
